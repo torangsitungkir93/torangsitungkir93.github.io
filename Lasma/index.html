@@ -1,5 +1,7 @@
 <html>
+<!-- 
 
+-->
 <meta charset='UTF-8' />
 <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
     name='viewport' />
@@ -164,7 +166,7 @@
 
             <div class="foto">
                 <!-- Foto Doi -->
-                <div class="image" onClick="iloveu();loveyou()"><img src="https://i.ibb.co/dBbk3sw/arena-of-valor-sinestrea-by-arataneoxy-deobtn6.jpg"
+                <div class="image" onClick="iloveu();loveyou()"><img src="https://c.tenor.com/PvvfK8n6lBQAAAAM/milk-and-mocha-love.gif"
                         width="100px" height="100px" /></div>
                 <!-- Nick Doi --><span id="sp1">Lasma <div id="lope" class="leaves"
                         style="display:inline-block;align-items:center;justify-content:center;">&#9829;</div></span>
@@ -228,7 +230,7 @@
 
                 function ketik() {
                     if (i < text.length) {
-                        document.getElementById("text").innerHTML += text.chLasma(i);
+                        document.getElementById("text").innerHTML += text.charAt(i);
                         i++;
 
                         setTimeout(ketik, 100);
@@ -240,7 +242,7 @@
 
                 function ketikk() {
                     if (u < text2.length) {
-                        document.getElementById("text2").innerHTML += text2.chLasma(u);
+                        document.getElementById("text2").innerHTML += text2.charAt(u);
                         u++;
                         setTimeout(ketikk, 200);
                     }
@@ -251,7 +253,7 @@
 
                 function loveyou() {
                     if (a < text3.length) {
-                        document.getElementById("text3").innerHTML += text3.chLasma(a);
+                        document.getElementById("text3").innerHTML += text3.charAt(a);
                         a++;
                         setTimeout(loveyou, 120);
                     }
@@ -281,7 +283,7 @@
                             title: 'Seberapa sayang?',
                             icon: 'question',
                             input: 'range',
-                            inputLabel: 'AntLasma 90-100% ya',
+                            inputLabel: 'Antara 90-100% ya',
                             inputAttributes: {
                                 min: 90,
                                 max: 100,
@@ -303,7 +305,7 @@
                             if (kangen) {
                                 await swals.fire(`Awwhh ${namaku} juga kangen ${namadoi} &#10084;&#65039;`);
                                 await swals.fire('Thx uu!', 'Udah meluangkan waktunya!');
-                                await swals.fire(`SekLasma lihat ini yaa`);
+                                await swals.fire(`Sekarang lihat ini yaa`);
 
                                 ketik();
                                 showDiv()
