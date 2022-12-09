@@ -176,7 +176,7 @@
             <div id='Content' style="display:none">
                 <blockquote>
                     <p id="text"></p>
-                    <p id="text2" style="font-size:10px;text-align:right;opacity:.7;"></p>
+                    <p id="text2" style="font-size:15px;text-align:right;opacity:.7;"></p>
                 </blockquote>
                 <!-- Nomor WA --><a id="whs" class='button whatsapp'
                     href='https://api.whatsapp.com/send?phone=&text=Hai,%0AMmmm%0A%0AAku%20udah%20bacain%20semuanya><'><i
@@ -267,61 +267,61 @@
                     confirmButtonColor: '#00B487',
                 });
                 async function mulai() {
-                    var {
-                        isConfirmed: sayang
-                    } = await swals.fire({
-                        title: `${namadoi} sayang gak sama ${namaku} :(`,
-                        confirmButtonText: 'Sayang',
-                        cancelButtonText: 'G',
-                        allowOutsideClick: false,
-                        showCancelButton: true,
-                    });
-                    if (sayang) {
-                        var {
-                            value: persen
-                        } = await swals.fire({
-                            title: 'Seberapa sayang?',
-                            icon: 'question',
-                            input: 'range',
-                            inputLabel: 'Antara 90-100% ya',
-                            inputAttributes: {
-                                min: 90,
-                                max: 100,
-                            },
-                            allowOutsideClick: false,
-                            inputValue: 90
-                        });
-                        if (persen) {
-                            await swals.fire(`Maacii udah sayang sama ${namaku} ${persen}%`);
-                            var {
-                                isConfirmed: kangen
-                            } = await swals.fire({
-                                title: `Terus ${namadoi} kangen ga sama ${namaku}?`,
-                                confirmButtonText: 'Kangen',
-                                cancelButtonText: 'Gak!',
-                                allowOutsideClick: false,
-                                showCancelButton: true,
-                            });
-                            if (kangen) {
-                                await swals.fire(`Awwhh ${namaku} juga kangen ${namadoi} &#10084;&#65039;`);
-                                await swals.fire('Thx uu!', 'Udah meluangkan waktunya!');
-                                await swals.fire(`Sekarang lihat ini yaa`);
+                    // var {
+                    //     isConfirmed: sayang
+                    // } = await swals.fire({
+                    //     title: `${namadoi} sayang gak sama ${namaku} :(`,
+                    //     confirmButtonText: 'Sayang',
+                    //     cancelButtonText: 'G',
+                    //     allowOutsideClick: false,
+                    //     showCancelButton: true,
+                    // });
+                    // if (sayang) {
+                    //     var {
+                    //         value: persen
+                    //     } = await swals.fire({
+                    //         title: 'Seberapa sayang?',
+                    //         icon: 'question',
+                    //         input: 'range',
+                    //         inputLabel: 'Antara 90-100% ya',
+                    //         inputAttributes: {
+                    //             min: 90,
+                    //             max: 100,
+                    //         },
+                    //         allowOutsideClick: false,
+                    //         inputValue: 90
+                    //     });
+                    //     if (persen) {
+                    //         await swals.fire(`Maacii udah sayang sama ${namaku} ${persen}%`);
+                    //         var {
+                    //             isConfirmed: kangen
+                    //         } = await swals.fire({
+                    //             title: `Terus ${namadoi} kangen ga sama ${namaku}?`,
+                    //             confirmButtonText: 'Kangen',
+                    //             cancelButtonText: 'Gak!',
+                    //             allowOutsideClick: false,
+                    //             showCancelButton: true,
+                    //         });
+                    //         if (kangen) {
+                    //             await swals.fire(`Awwhh ${namaku} juga kangen ${namadoi} &#10084;&#65039;`);
+                    //             await swals.fire('Thx uu!', 'Udah meluangkan waktunya!');
+                    //             await swals.fire(`Sekarang lihat ini yaa`);
 
                                 ketik();
                                 showDiv()
-                            } else {
-                                //gak kangen
-                                await swals.fire('Aarrgghhh');
-                                showTo();
-                            }
-                        }
-                    } else {
-                        //gak sayang
-                        await swals.fire('Yahh. Sedih :(');
-                        await swals.fire('Yaudah deh');
-                        await swals.fire('Semoga harimu indah &#10084;&#65039;');
-                        showTo();
-                    }
+                        //     } else {
+                        //         //gak kangen
+                        //         await swals.fire('Aarrgghhh');
+                        //         showTo();
+                        //     }
+                        // }
+                    // } else {
+                    //     //gak sayang
+                    //     await swals.fire('Yahh. Sedih :(');
+                    //     await swals.fire('Yaudah deh');
+                    //     await swals.fire('Semoga harimu indah &#10084;&#65039;');
+                    //     showTo();
+                    // }
                 }
             </script>
             </body>
